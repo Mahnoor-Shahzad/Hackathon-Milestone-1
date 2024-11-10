@@ -1,0 +1,166 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 150px;
+  display: flex;
+}
+
+.resume-container {
+  display: flex;
+  background-color: rgb(250, 250, 250);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.right-section {
+  background-color: rgb(240, 237, 237);
+  font-family: "Arial", sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 18px;
+  width: 65%;
+}
+
+.left-section {
+  background-color: rgb(89, 189, 228);
+  border-radius: 10px;
+  color: rgb(28, 19, 19);
+  padding: 20px;
+  width: 35%;
+  font-size: 20px;
+  font-style: oblique;
+  text-align: center;
+  border-right: 5px solid #464747;
+  border-left: 5px solid #464747;
+  border-top:5px solid #464747;
+  border-bottom: 5px solid #464747;
+  
+}
+
+.profile-picture {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  margin-top: 10%;
+  border-radius: 50%;
+  border: 5px solid rgb(51, 50, 50);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(27, 128, 168) ;
+}
+
+h3 {
+  font-size: 18px;
+  padding: 2%;
+  margin: 20px 0 10px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #535454;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+ul {
+  list-style-type: fill round;
+  padding: 10;
+  margin: 10px 0;
+}
+ul li {
+  margin: 5px 0;
+  text-align: justify;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(77, 77, 77);
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color:skyblue;
+}
+/* Default (for large screens) */
+.resume-container {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for large screens */
+  ;
+}
+
+.right-section {
+  width: 70%; /* Give each section nearly half the container width */
+}
+.left-section{
+  width: 40%;
+}
+/* For small screens like tablets or phones */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: row; /* Stack sections vertically */
+  }
+
+  .left-section, .right-section {
+    width: 100%; /* Each section takes full width */
+    margin-bottom: 20px; /* Add some space between sections */
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+
+/* For very small screens (phones) */
+@media (max-width: 480px) {
+  .resume-container {
+    width: 900px;
+    padding: 20px; /* Reduce padding on very small screens */
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+;
+}
